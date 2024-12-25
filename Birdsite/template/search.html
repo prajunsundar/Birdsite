@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{%load static %}
+<div>
+    {% block body %}
+    <div class="container text-white" style="margin-top:100px;">
+
+    <div class="row">
+        {% for birds in bird %}
+        <div class="col-sm-12">
+            <img src="{{birds.image.url}}" style="width:500px;height:400px;">
+             <h1>{{birds.name}}</h1>
+        </div>
+        <div class="col-sm-12" style="font-family:arial;">
+            <h4>Domain:{{birds.domain}}</h4>
+            <h4>Kingdom:{{birds.kingdom}}</h4>
+            <p style="font-size:20px;">{{birds.details}}</p><br>
+            <hr>
+        </div>
+        {% empty %}
+        <div class="row mx-auto">
+                <p class="text-center" style="font-size:50px;">0 results found</p>
+            </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+    {% endblock%}
+</div>
+

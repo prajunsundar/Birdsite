@@ -1,0 +1,29 @@
+
+body{
+
+
+
+        }
+
+
+.card1:hover h5{
+    color:#5555fa;
+}
+.card{
+  cursor:pointer;
+  transition:all ease-in-out 1s;
+
+
+}
+.card:hover{
+  box-shadow:0 0 0 20em inset #5555fa;
+  color:#eee;
+  transform:scale(1.1);
+  transform-duration:2s;
+
+}
+.card:hover a{
+    background:#eee;
+    color:#5555fa;
+}
+
