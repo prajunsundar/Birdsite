@@ -7,7 +7,7 @@
     <div class="row">
         {% for birds in bird %}
         <div class="col-sm-12">
-            <img src="{{birds.image.url}}" style="width:500px;height:400px;">
+            <img src="{{birds.image.url}}" style="width:100%;max-width:500px;height:auto;margin-bottom:20px;margin-top:20px;">
              <h1>{{birds.name}}</h1>
         </div>
         <div class="col-sm-12" style="font-family:arial;">
