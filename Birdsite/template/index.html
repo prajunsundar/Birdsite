@@ -100,7 +100,7 @@
 <div class="container">
     <div class="row g-4">
         {% for bird in page_obj.object_list %}
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
             <div class="card p-3 mb-5 rounded" style="width: 20rem;height:25rem;margin:50px;">
                 <img src="{{bird.image.url}}" class="card-img-top" style="height:15rem;object-fit:fill;" alt="...">
                 <div class="card-body">
